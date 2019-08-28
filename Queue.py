@@ -8,6 +8,7 @@ class Queue:
     def dequeue(self):
         if self.size() < 1:
             return None # если стек пустой
-        return self.queue.pop(0) 
+        return self.queue.pop(self.size()-1)
+        
     def size(self):
         return len(self.queue) # размер очереди
